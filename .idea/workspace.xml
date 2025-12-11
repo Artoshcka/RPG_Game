@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ce84f41-0acc-4832-bd7a-7874d6f50e77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SuperDuperRPG.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Release/battle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Release/classes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Release/hub.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Release/logger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Release/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Release/storage.py" afterDir="false" />
+    <list default="true" id="8ce84f41-0acc-4832-bd7a-7874d6f50e77" name="Changes" comment="Изменения:&#10;- фикс багов&#10;- возможность менять имя&#10;- система сохранения/чтения данных">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +68,30 @@
       <option name="presentableId" value="Default" />
       <updated>1765175787055</updated>
     </task>
+    <task id="LOCAL-00001" summary="Изменения:&#10;- фикс багов&#10;- возможность менять имя&#10;- система сохранения/чтения данных">
+      <option name="closed" value="true" />
+      <created>1765463612842</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765463612842</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Изменения:&#10;- фикс багов&#10;- возможность менять имя&#10;- система сохранения/чтения данных" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменения:&#10;- фикс багов&#10;- возможность менять имя&#10;- система сохранения/чтения данных" />
   </component>
 </project>

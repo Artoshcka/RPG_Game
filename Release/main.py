@@ -4,6 +4,17 @@ from hub import *
 from logger import *
 from storage import *
 
+
+flag = True
+for dir in os.listdir():
+    if dir == "RPG_Game/Release/Storage":
+        flag = False
+        break
+    else:
+        continue
+if flag:
+    os.mkdir("RPG_Game/Release/Storage")
+
 user, characters = load_data()
 
 characters_hp = [150, 115, 180]

@@ -7,13 +7,13 @@ from storage import *
 
 flag = True
 for dir in os.listdir():
-    if dir == "RPG_Game/Release/Storage":
+    if dir == "Storage":
         flag = False
         break
     else:
         continue
 if flag:
-    os.mkdir("RPG_Game/Release/Storage")
+    os.mkdir("Storage")
 
 user, characters = load_data()
 
@@ -26,14 +26,25 @@ def main():
     global characters, selected_character, user
 
     if user is None or characters is None:
-        user, characters = register_user()
+        user = User('Пустое имя', 100, False)
+        characters = [
+            Character('Викинг', 0, 25, 20, True, 0),
+            Character('Лучник', 0, 45, 10, False, 1000),
+            Character('Маг', 0, 15, 25, False, 2500)
+        ]
         selected_character = 0
 
         print(Fore.YELLOW + 'Создан новый пользователь.\n' +
               Fore.CYAN + '  > Давай придумаем никнейм...')
 
         user.name = input(Fore.WHITE + 'Введите значение: ')
+        user.registered = True
+
         save_data(user, characters)
+    else:
+
+        print(user)
+        print(characters)
 
     player = characters[selected_character]
 

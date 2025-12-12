@@ -1,28 +1,28 @@
 import pickle
 import os
 
+path = r'Storage/Data.pkl'  # Изменили расширение на .pkl
 
-path = r'RPG_Game/Release/Storage/'
 print(os.path.exists(path))
 
 def save_data(user, characters):
     try:
-        with open(path, 'wb') as f:
+        with open(path, 'wb') as f:  # Режим 'wb' — запись в бинарном формате
             pickle.dump({
                 'user': user,
                 'characters': characters
             }, f)
-        #print(f"Данные сохранены: {path}")
+        print(f"Данные сохранены: {path}")
     except Exception as e:
         print(f'Ошибка сохранения: {e}')
 
-
 def load_data():
     if not os.path.exists(path):
-        #print(f'Файл сохранения не найден: {path}')
+        print(f'Файл сохранения не найден: {path}')
         return None, None
+
     try:
-        with open(path, 'rb') as f:
+        with open(path, 'rb') as f:  # Режим 'rb' — чтение в бинарном формате
             data = pickle.load(f)
 
         user = data['user']
@@ -32,7 +32,7 @@ def load_data():
         return user, characters
 
     except pickle.UnpicklingError as e:
-        print(f'Ошибка распаковки pickle: {e}')
+        print(f'Ошибка распаковки данных: {e}')
         return None, None
     except KeyError as e:
         print(f'Отсутствует ключ в данных: {e}')

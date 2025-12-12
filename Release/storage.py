@@ -1,8 +1,9 @@
 import pickle
 import os
 
-path = r'Storage/data.pkl'
 
+path = r'RPG_Game/Release/Storage/'
+print(os.path.exists(path))
 
 def save_data(user, characters):
     try:
@@ -18,7 +19,7 @@ def save_data(user, characters):
 
 def load_data():
     if not os.path.exists(path):
-        print(f'Файл сохранения не найден: {path}')
+        #print(f'Файл сохранения не найден: {path}')
         return None, None
     try:
         with open(path, 'rb') as f:
@@ -27,7 +28,7 @@ def load_data():
         user = data['user']
         characters = data['characters']
 
-        #print(f"Данные загружены: {path}")
+        print(f"Данные загружены: {path}")
         return user, characters
 
     except pickle.UnpicklingError as e:
